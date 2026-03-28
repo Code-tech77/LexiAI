@@ -1,7 +1,3 @@
-// =======================
-// 🌗 THEME TOGGLE SYSTEM
-// =======================
-
 const toggleBtn = document.getElementById("themeToggle");
 const body = document.body;
 
@@ -37,11 +33,6 @@ toggleBtn.addEventListener("click", () => {
     updateButton();
 });
 
-
-// =======================
-// 🧠 AI STATUS SYSTEM
-// =======================
-
 const statusDiv = document.getElementById("status");
 const input = document.getElementById("urlInput");
 
@@ -55,11 +46,6 @@ input.addEventListener("input", () => {
         statusDiv.innerText = "📄 Ready to summarize...";
     }
 });
-
-
-// =======================
-// 🚀 SUMMARIZE FUNCTION
-// =======================
 
 async function summarizeArticle() {
     const url = input.value;
